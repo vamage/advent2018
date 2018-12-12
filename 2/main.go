@@ -32,7 +32,6 @@ func main() {
 		for y:=x+1;y<len(set);y++ {
 			wmatch :=0
 			w:= ""
-			fmt.Printf("%v \n", set[y] )
 			for s:=0;s<len(set[x]);s++{
 
 				if ( string([]rune(set[x])[s]) == string([]rune(set[y])[s])  ){
@@ -48,7 +47,7 @@ func main() {
 	}
 
 	fmt.Printf(" two: %d \n three: %d \n pt1 hash: %d \n",z[0],z[1],z[0]*z[1])
-	fmt.Printf("part two %v",nearmiss)
+	fmt.Printf("part two %v \n",nearmiss)
 
 
 }
